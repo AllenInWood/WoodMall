@@ -35,6 +35,7 @@ public class UserController {
         if (response.isSuccess()) {
             session.setAttribute(Const.CURRENT_USER, response.getData());
         }
+        System.out.println("!!!!!!!!!!:" + ((User) session.getAttribute(Const.CURRENT_USER)).getUsername() );
         return response;
     }
 
