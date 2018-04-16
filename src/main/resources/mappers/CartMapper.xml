@@ -155,4 +155,11 @@
     SELECT IFNULL(sum(quantity),0) as COUNT from wood_cart
     WHERE user_id = #{userId}
   </select>
+  <select id="selectCheckedCartByUserId" parameterType="int" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM wood_cart
+    WHERE user_id = #{userId}
+    and checked = 1
+  </select>
 </mapper>
