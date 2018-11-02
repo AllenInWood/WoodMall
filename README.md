@@ -1,6 +1,9 @@
 # WoodMall
+Back End Services Supporting Electronic Shopping
 __________________________________________________________________________________________________
-
+1. Implemented whole shopping services with users, orders, carts, products management. 
+2. Used SpringMVC for requests routing and handling and Spring for IoC, used Mybatis for DAO/Mappers configuration and pagination, used LogBack plugin for exception log maintaining. 
+3. Built external vsftpd server in CentOs VM for img/richtext uploading, integrated alipay API in sandbox mode for payment testing, used Guava cache in LRU mode for user token memorization.
 
 # Service Intro (front stage)
 
